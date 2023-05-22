@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="./weather.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+     <style>
+        #map{
+            background: url('https://cdn.hswstatic.com/gif/maps.jpg') no-repeat;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="map"></div>
+        <div id="weather">
+            <h1 class="location-timezone">Bangalore</h1>
+            <p class="icon"><img src="./animated/cloudy-day-2.svg"></p>
+            <div class="temperature-description">cool weather</div>
+            <h2 class="temperature-degree">26°C</h2>
+            <div class="max-min">
+                <span class="maxTemp">28°C</span>
+                <span class="minTemp">23°C</span>
+            </div>
+            <div class="windSpeed">14kmph</div>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
